@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+}
+:root{
+    --ff-primary: 'Roboto Condensed', sans-serif;
+    --ff-secondary:'Source Sans 3', sans-serif;
+}
+a{
+    text-decoration: none;
+}
