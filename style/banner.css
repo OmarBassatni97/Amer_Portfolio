@@ -8,7 +8,7 @@
         height: 600px;
     }
 .mySkills{
-    height: 200px;
+    height: 300px;
     border-bottom: lightgray  solid 1px ;
 }
 .mySkills ul{
@@ -25,7 +25,8 @@
 .mySkills p{
     font-family: var(--ff-secondary);
     text-align: center;
-    padding: 40px 0;
+    padding: 70px 0;
+    font-size: 20px;
 }
 
 .mySkills a{
