@@ -1,47 +1,88 @@
 .nav{
-    display: flex;
-    align-items: center;
     width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
     height: 70px;
+    overflow: hidden;
+    background-color: #f4f7f6;
 }
-nav ul{
-    flex: 1;
-    text-align: center;
+.menu-items{
+    width: 80%;
+    display: flex;
+    justify-content: center;
 }
-
-nav ul li{
-    display: inline-block;
-    margin: 0 62px;
-}
-
-nav ul li a{
+.menu-items a{
+    font-size: 20px;
+    font-family: var(--ff-primary);
+    padding: 20px;
     text-decoration: none;
     color: black;
     font-weight: 700;
-    font-family: var(--ff-secondary);
-    transition: 500ms;
 }
-nav ul li a:hover{
+.menu-items a:hover{
     opacity: .7;
 }
 .contact-me{
-    font-family: var(--ff-primary);
-    display: flex;
+    display: inline-flex;
+    float: right;
     justify-content: center;
-    color: white;
-    background: black;
-    height: 100%;
-    width: 200px;
     align-items: center;
+    font-family: var(--ff-primary);
+    background: black;
+    width: 10%;
     transition: 500ms;
+    height: 70px;
+    cursor: pointer;
+    
+}
+.contact-me_text{
+    color: white;
+    transition: .5s;
 }
 .contact-me:hover{
     opacity: .8;
 }
 .title{
+    display: flex;
+    width: 8%;
+    justify-content: center;
    font-family: var(--ff-primary);
-    border-right: gray solid 1px;
+    border-right: lightgray solid 1px;
     height: 30px;
     padding: 20px 20px;
+    float: left;
+}
+@media screen and (max-width:375px) {
+    header{
+        width: 375px;
+        
+    }
+    .menu-items{
+        width: 80%;
+        display: flex;
+    }
+    .menu-items a{
+        font-size: 10px;
+       margin: 0;
+       padding: 10px;
+    }
+    .title {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        text-align: center;
+    }
+  
+    .contact-me{
+        width: 100px;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-me_text{
+        width: 100%;
+        font-size: 7px;
+    }
 }
 

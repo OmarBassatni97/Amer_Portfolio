@@ -1,0 +1,36 @@
+.my--services{
+    background-color: darkgray;
+    background-image: url(../img/MOBILE-ID-MOCKUP.jpg);
+    color: white;
+    background-blend-mode: multiply;
+    background-size: cover;
+    text-align: center;
+}
+.my--services p{
+    opacity: 0.75;
+}
+.section__title--services{
+    color: var(--clr-accent);
+    position: relative;
+    
+}
+.services{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+.section__title--services::after{
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background:var(--clr-light);
+    opacity: 0.25;
+    
+}
+.service{
+    width: 33%;
+    margin: 0 auto;
+
+}

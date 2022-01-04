@@ -1,15 +1,12 @@
 .canvas{
-    height: 100vh;
+    overflow: hidden;
+    height: 1100px;
     background-position: center;
-  
-    }
-    .canvas-img{
-        width: 100%;
-        height: 600px;
+    border-bottom: lightgray  solid 1px ;
     }
 .mySkills{
-    height: 300px;
-    border-bottom: lightgray  solid 1px ;
+    height: 280px;
+    
 }
 .mySkills ul{
     text-align:center;
@@ -18,16 +15,17 @@
 .mySkills li{
     display: inline-block;
     list-style: none;
-    
-    
 }
 
 .mySkills p{
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     text-align: center;
-    padding: 70px 0;
+    padding: 50px 0;
     font-size: 20px;
+    opacity: .87;
+    line-height: 1.5;
 }
+
 
 .mySkills a{
     margin: 0  5px;
@@ -36,7 +34,7 @@ border-radius: 50px;
 padding: 10px;
 transition: .5s;
 color: black;
-font-family: var(--ff-secondary);
+font-family: var(--ff-primary);
 
 }
 .mySkills a:hover{
@@ -46,4 +44,36 @@ font-family: var(--ff-secondary);
 }
 .mySkills::after{
     display: block;
+}
+@media screen and (max-width:375px) {
+    .canvas{
+        width: 375px;
+        height: 400px;
+    }
+    .banner img{
+        width: 680px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .mySkills{
+        height: 200px;
+        margin-right: 20px;
+    }
+    .mySkills p{
+        font-size: 10px;
+        padding: 10px;
+    }
+    .mySkills a{
+        font-size: 10px;
+        display: flex;
+        margin-top: 5px;
+        margin: 1px;
+    }
+}
+@media screen and (min-width:376px){
+    .side-note::before{
+        content:"\a";
+        white-space: pre;
+    }
 }
