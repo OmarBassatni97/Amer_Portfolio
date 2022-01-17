@@ -9,5 +9,12 @@ a{
     text-decoration: none;
 }
 body{
-  background-color: #f4f7f6;
+  background-color: white;
+  transition: .5s ease-in-out;
+}
+.dark{
+    background: #0C0C0C;
+    overflow: hidden;
+  
+    
 }

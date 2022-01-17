@@ -1,12 +1,20 @@
-// const nav =document.querySelector('nav');
 
-// window.addEventListener('scroll',function(){
-//     const offset=window.pageYOffset;
+const miniproject = document.querySelectorAll(".mini-project")
 
-//     if(offset>75){
-//         nav.classList.add('scroll')
-//     }
-//     else{
-//         nav.classList.remove('scroll')
-//     }
-// });
+miniproject.forEach(project =>{
+    project.addEventListener("click",function(){
+       const img= this.querySelector(".mini-project_img")
+       document.body.classList.toggle("dark")
+      img.classList.toggle("enlarge")
+      
+      
+   
+})
+})
+
+
+
+   
+   
+   
+

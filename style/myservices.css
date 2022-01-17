@@ -1,23 +1,22 @@
 .my--services{
-    background-color: darkgray;
-    background-image: url(../img/MOBILE-ID-MOCKUP.jpg);
-    color: white;
-    background-blend-mode: multiply;
+    font-family: var(--ff-primary);
+    border-bottom:lightgray  solid 1px;
+    color: black;
+    /* background-blend-mode: multiply; */
+    height: 400px;
     background-size: cover;
     text-align: center;
+    margin-top: 20px;
 }
-.my--services p{
-    opacity: 0.75;
-}
+
 .section__title--services{
-    color: var(--clr-accent);
-    position: relative;
-    
+    margin-top: 40px;
 }
 .services{
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 1300px;
+    margin: 0 auto;
 }
 .section__title--services::after{
     content: '';
@@ -25,12 +24,33 @@
     width: 2em;
     height: 1px;
     margin: 0.5em auto 1em;
-    background:var(--clr-light);
-    opacity: 0.25;
-    
 }
 .service{
     width: 33%;
     margin: 0 auto;
-
+    font-size: 20px;
+    padding: 20px;
+}
+.service h3{
+    font-size: 20px;
+}
+@media screen and (max-width:420px){
+    .my--services{
+        width: 100%;
+        height: 500px;
+    }
+    .services{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        margin-top: -50px;
+    }
+    .service{
+        width: 90%;
+        height: 20%;
+        font-size: 12px;
+    }
+    .section__title--services{
+        margin-top: 30px;
+    }
 }
